@@ -59,6 +59,19 @@ Demonstrates tokenization and processing of Chinese characters in the Cangjie pr
 - Cangjie input method decomposition
 - Text processing and semantic analysis
 
+### 7. Chinese Encryption Algorithms (中文加密算法)
+**File:** `chinese_encryption.cj`
+
+Demonstrates various encryption methods and cryptographic concepts with Chinese character support, including:
+- **Eight Trigrams Substitution Cipher (八卦替換密碼)** - Classical substitution cipher based on I Ching
+- **Position Substitution (字位替換法)** - Ancient method using classic Chinese texts
+- **Reverse Encryption (反序加密)** - Simple text obfuscation technique
+- **Character Frequency Analysis** - Cryptanalysis of Chinese text
+- Historical context of Chinese cryptography (Spring-Autumn period through Qing dynasty)
+- Modern applications in Unicode security and blockchain
+
+Note: These are educational demonstrations of cryptographic concepts, not production-grade implementations.
+
 ## Running the Examples
 
 To run these examples, you need to have the Cangjie compiler installed. Visit [Cangjie Official Website](https://cangjie-lang.cn/) for installation instructions.
