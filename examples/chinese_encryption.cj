@@ -2,13 +2,6 @@
 // Demonstrating various encryption concepts with Chinese character support
 // 古代中國密碼學與現代加密技術
 
-// Structure to represent an encrypted message
-struct EncryptedMessage {
-    let plainText: String
-    let cipherText: String
-    let method: String
-}
-
 // Display an encryption example
 func showEncryption(method: String, plain: String, cipher: String, description: String) {
     println("   方法: ${method}")
