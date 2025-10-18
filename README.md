@@ -44,6 +44,8 @@ This repository includes [example programs](examples/) demonstrating Chinese mat
 - Mathematical Tribute (數學致敬) - Honoring Zhang Yitang (張益唐), Chern-Class, Yang-Mills, Calabi-Yau, and the printing press.
 - Chinese Token System (字符標記) - Chinese character tokenization and processing in Cangjie.
 
+See the [examples README](examples/README.md) for source code and detailed documentation.
+
 ## Projects
 
 ### 仓颉开源
