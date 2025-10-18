@@ -4,7 +4,7 @@
 
 ## ewdlop
 
-张益唐; 雞兔同籠; 中文的交換率;中文的交換律; Chinese character token, Chern-Class, Yang–Mills, Calabi-Yau, printing press, chinese remainder theorem, eight-trigram
+张益唐; 雞兔同籠; 中文的交換率;中文的交換律; Chinese character token, Chern-Class, Yang–Mills, Calabi-Yau, printing press, chinese remainder theorem, eight-trigram in 倉頡
 
 <https://cangjie-lang.cn/en/docs?url=%2F0.53.13%2Fuser_manual%2Fsource_en%2Ffirst_understanding%2Fbasic.html>
 
