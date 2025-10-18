@@ -12,6 +12,7 @@
 
 ## Contents
 
+- [Examples](#examples)
 - [Projects](#projects)
   - [仓颉开源](#仓颉开源)
   - [AI](#ai)
@@ -31,6 +32,19 @@
   - [Security](#security)
   - [Web](#web)
 - [Resources](#resources)
+
+## Examples
+
+Example programs demonstrating Chinese mathematical concepts, algorithms, and cultural elements:
+
+- [Chicken and Rabbit Problem (雞兔同籠)](examples/chicken_rabbit.cj) - Classic Chinese math problem
+- [Chinese Remainder Theorem (中國剩餘定理)](examples/chinese_remainder_theorem.cj) - Sun Tzu's Theorem
+- [Eight Trigrams (八卦)](examples/eight_trigram.cj) - Ba Gua from I Ching
+- [Commutativity (交換律)](examples/commutativity.cj) - Commutative property demonstrations
+- [Mathematical Tribute (數學致敬)](examples/mathematical_tribute.cj) - Honoring Zhang Yitang (張益唐), Chern, Yang-Mills, Calabi-Yau
+- [Chinese Token System (字符標記)](examples/chinese_token.cj) - Chinese character tokenization
+
+See [examples/README.md](examples/README.md) for detailed documentation.
 
 ## Projects
 
