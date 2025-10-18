@@ -12,6 +12,7 @@
 
 ## Contents
 
+- [Examples](#examples)
 - [Projects](#projects)
   - [仓颉开源](#仓颉开源)
   - [AI](#ai)
@@ -31,6 +32,19 @@
   - [Security](#security)
   - [Web](#web)
 - [Resources](#resources)
+
+## Examples
+
+This repository includes [example programs](examples/) demonstrating Chinese mathematical concepts and cultural elements in Cangjie:
+
+- Chicken and Rabbit Problem (雞兔同籠) - Classic Chinese math problem from "The Mathematical Classic of Master Sun".
+- Chinese Remainder Theorem (中國剩餘定理) - Sun Tzu's Theorem for solving systems of congruences.
+- Eight Trigrams (八卦) - Ba Gua from I Ching representing fundamental Taoist principles.
+- Commutativity (交換律) - Demonstrating commutative and non-commutative operations with Chinese characters.
+- Mathematical Tribute (數學致敬) - Honoring Zhang Yitang (張益唐), Chern-Class, Yang-Mills, Calabi-Yau, and the printing press.
+- Chinese Token System (字符標記) - Chinese character tokenization and processing in Cangjie.
+
+See the [examples README](examples/README.md) for source code and detailed documentation.
 
 ## Projects
 
