@@ -35,63 +35,98 @@ func convertToFormalNumber(num: Int64): String {
     }
     
     var result = ""
+    var needZero = false
     var tempNum = num
     
     // Handle 万 (ten thousands)
     if (tempNum >= 10000) {
         let wan = tempNum / 10000
-        if (wan >= 1000) {
+        let hasThousand = wan >= 1000
+        let hasHundred = (wan % 1000) >= 100
+        let hasTen = (wan % 100) >= 10
+        let hasOne = (wan % 10) > 0
+        
+        if (hasThousand) {
             result += getFormalDigit(wan / 1000)
             result += "仟"
+            needZero = false
+        } else {
+            needZero = true
         }
-        if ((wan % 1000) >= 100) {
+        
+        if (hasHundred) {
+            if (needZero && !hasThousand) {
+                result += "零"
+            }
             result += getFormalDigit((wan % 1000) / 100)
             result += "佰"
+            needZero = false
+        } else if (hasThousand && (hasTen || hasOne)) {
+            needZero = true
         }
-        if ((wan % 100) >= 10) {
+        
+        if (hasTen) {
+            if (needZero && (!hasThousand || !hasHundred)) {
+                result += "零"
+            }
             result += getFormalDigit((wan % 100) / 10)
             result += "拾"
+            needZero = false
+        } else if ((hasThousand || hasHundred) && hasOne) {
+            needZero = true
         }
-        if (wan % 10 > 0) {
+        
+        if (hasOne) {
+            if (needZero) {
+                result += "零"
+            }
             result += getFormalDigit(wan % 10)
+            needZero = false
         }
+        
         result += "萬"
         tempNum = num % 10000
-        
-        if (tempNum > 0 && tempNum < 1000) {
-            result += "零"
-        }
+        needZero = tempNum > 0 && tempNum < 1000
     }
     
     // Handle thousands
     if (tempNum >= 1000) {
+        if (needZero && num >= 10000) {
+            result += "零"
+        }
         result += getFormalDigit(tempNum / 1000)
         result += "仟"
         tempNum = tempNum % 1000
-        if (tempNum > 0 && tempNum < 100) {
-            result += "零"
-        }
+        needZero = tempNum > 0 && tempNum < 100
     }
     
     // Handle hundreds
     if (tempNum >= 100) {
+        if (needZero && (num >= 1000 || num >= 10000)) {
+            result += "零"
+        }
         result += getFormalDigit(tempNum / 100)
         result += "佰"
         tempNum = tempNum % 100
-        if (tempNum > 0 && tempNum < 10) {
-            result += "零"
-        }
+        needZero = tempNum > 0 && tempNum < 10
     }
     
     // Handle tens
     if (tempNum >= 10) {
+        if (needZero && (num >= 100 || num >= 1000 || num >= 10000)) {
+            result += "零"
+        }
         result += getFormalDigit(tempNum / 10)
         result += "拾"
         tempNum = tempNum % 10
+        needZero = false
     }
     
     // Handle ones
     if (tempNum > 0) {
+        if (needZero && num > 10) {
+            result += "零"
+        }
         result += getFormalDigit(tempNum)
     }
     
