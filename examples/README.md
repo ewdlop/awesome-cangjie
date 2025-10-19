@@ -72,6 +72,20 @@ Demonstrates various encryption methods and cryptographic concepts with Chinese 
 
 Note: These are educational demonstrations of cryptographic concepts, not production-grade implementations.
 
+### 8. Six Categories of Chinese Characters (六書)
+**File:** `six_categories.cj`
+
+Comprehensive demonstration of the classical Six Categories (六書 - Liù Shū) classification system for Chinese character formation, as systematized in the Shuowen Jiezi (說文解字) by Xu Shen (許慎) in 121 CE:
+
+1. **象形 (Xiàngxíng) - Pictographs**: Characters that visually represent objects (日 sun, 月 moon, 山 mountain)
+2. **指事 (Zhǐshì) - Ideographs**: Characters representing abstract concepts through symbolic marks (上 above, 下 below, 本 root)
+3. **會意 (Huìyì) - Compound Ideographs**: Characters combining meanings of multiple components (明 = 日+月 bright, 休 = 人+木 rest)
+4. **形聲 (Xíngshēng) - Phono-semantic Compounds**: Characters with semantic and phonetic components (~90% of all characters)
+5. **轉注 (Zhuǎnzhù) - Derivative Cognates**: Characters that extend meanings to related concepts
+6. **假借 (Jiǎjiè) - Phonetic Loan Characters**: Characters borrowed for their sound (來 originally wheat → come)
+
+This example illustrates the fundamental principles of Chinese character formation and their cultural significance in linguistics, education, and modern applications like input methods and NLP.
+
 ## Running the Examples
 
 To run these examples, you need to have the Cangjie compiler installed. Visit [Cangjie Official Website](https://cangjie-lang.cn/) for installation instructions.
