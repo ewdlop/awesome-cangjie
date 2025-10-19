@@ -43,6 +43,7 @@ This repository includes [example programs](examples/) demonstrating Chinese mat
 - Commutativity (交換律) - Demonstrating commutative and non-commutative operations with Chinese characters.
 - Mathematical Tribute (數學致敬) - Honoring Zhang Yitang (張益唐), Chern-Class, Yang-Mills, Calabi-Yau, and the printing press.
 - Chinese Token System (字符標記) - Chinese character tokenization and processing in Cangjie.
+- Chinese Encryption Algorithms (中文加密算法) - Classical and modern encryption methods with Chinese character support.
 
 See the [examples README](examples/README.md) for source code and detailed documentation.
 
