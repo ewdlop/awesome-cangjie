@@ -92,6 +92,7 @@ main() {
     
     for (ex in pictographs) {
         println("   ${ex.character} - ${ex.explanation}")
+        println("      構成: ${ex.components}")
         println("      演變: ${ex.evolution}")
     }
     println("")
@@ -135,6 +136,7 @@ main() {
     for (ex in ideographs) {
         println("   ${ex.character} - ${ex.explanation}")
         println("      構成: ${ex.components}")
+        println("      演變: ${ex.evolution}")
     }
     println("")
     
@@ -177,6 +179,7 @@ main() {
     for (ex in compoundIdeographs) {
         println("   ${ex.character} - ${ex.explanation}")
         println("      組合: ${ex.components}")
+        println("      演變: ${ex.evolution}")
     }
     println("")
     
@@ -220,6 +223,7 @@ main() {
     for (ex in phonoSemanticCompounds) {
         println("   ${ex.character} - ${ex.explanation}")
         println("      結構: ${ex.components}")
+        println("      演變: ${ex.evolution}")
     }
     println("")
     
@@ -249,6 +253,7 @@ main() {
     for (ex in derivativeCognates) {
         println("   ${ex.character} - ${ex.explanation}")
         println("      關聯: ${ex.components}")
+        println("      演變: ${ex.evolution}")
     }
     println("")
     
@@ -284,6 +289,7 @@ main() {
     for (ex in phoneticLoans) {
         println("   ${ex.character} - ${ex.explanation}")
         println("      借用: ${ex.components}")
+        println("      演變: ${ex.evolution}")
     }
     println("")
     
