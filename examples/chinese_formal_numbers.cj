@@ -3,8 +3,8 @@
 // to prevent fraudulent alterations of written amounts
 //
 // The formal numbers:
-// 壹 (yī) = 1    贰 (èr) = 2    叁 (sān) = 3    肆 (sì) = 4    伍 (wǔ) = 5
-// 陆 (liù) = 6   柒 (qī) = 7    捌 (bā) = 8     玖 (jiǔ) = 9   拾 (shí) = 10
+// 壹 (yī) = 1    貳 (èr) = 2    叄 (sān) = 3    肆 (sì) = 4    伍 (wǔ) = 5
+// 陸 (liù) = 6   柒 (qī) = 7    捌 (bā) = 8     玖 (jiǔ) = 9   拾 (shí) = 10
 //
 // Also includes larger units:
 // 佰 (bǎi) = 100   仟 (qiān) = 1000   萬 (wàn) = 10,000   億 (yì) = 100,000,000
@@ -13,11 +13,11 @@ func getFormalDigit(digit: Int64): String {
     match (digit) {
         case 0 => return "零"
         case 1 => return "壹"
-        case 2 => return "贰"
-        case 3 => return "叁"
+        case 2 => return "貳"
+        case 3 => return "叄"
         case 4 => return "肆"
         case 5 => return "伍"
-        case 6 => return "陆"
+        case 6 => return "陸"
         case 7 => return "柒"
         case 8 => return "捌"
         case 9 => return "玖"
@@ -143,11 +143,11 @@ main() {
     // Display the basic formal numbers
     println("基本大写数字 (Basic Formal Numbers 1-10):")
     println("  1 → 壹")
-    println("  2 → 贰")
-    println("  3 → 叁")
+    println("  2 → 貳")
+    println("  3 → 叄")
     println("  4 → 肆")
     println("  5 → 伍")
-    println("  6 → 陆")
+    println("  6 → 陸")
     println("  7 → 柒")
     println("  8 → 捌")
     println("  9 → 玖")
@@ -217,7 +217,7 @@ main() {
     // Comparison with simple numbers
     println("简体数字与大写数字对比 (Simple vs Formal Numbers):")
     println("简体数字: 一二三四五六七八九十 - 容易被篡改")
-    println("大写数字: 壹贰叁肆伍陆柒捌玖拾 - 笔画复杂，不易篡改")
+    println("大写数字: 壹貳叄肆伍陸柒捌玖拾 - 笔画复杂，不易篡改")
     println("")
     println("例如 (Examples):")
     println("  '一' 可以改为 '二' 或 '七'")

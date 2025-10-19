@@ -78,8 +78,8 @@ Note: These are educational demonstrations of cryptographic concepts, not produc
 Demonstrates the traditional Chinese formal number system used in financial and legal documents to prevent fraudulent alterations.
 
 The formal numbers are:
-- 壹 (1), 贰 (2), 叁 (3), 肆 (4), 伍 (5)
-- 陆 (6), 柒 (7), 捌 (8), 玖 (9), 拾 (10)
+- 壹 (1), 貳 (2), 叄 (3), 肆 (4), 伍 (5)
+- 陸 (6), 柒 (7), 捌 (8), 玖 (9), 拾 (10)
 
 Features:
 - Conversion between Arabic numerals and formal Chinese numbers
