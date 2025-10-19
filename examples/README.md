@@ -72,6 +72,22 @@ Demonstrates various encryption methods and cryptographic concepts with Chinese 
 
 Note: These are educational demonstrations of cryptographic concepts, not production-grade implementations.
 
+### 8. Chinese Formal Numbers (中文大写数字)
+**File:** `chinese_formal_numbers.cj`
+
+Demonstrates the traditional Chinese formal number system used in financial and legal documents to prevent fraudulent alterations.
+
+The formal numbers are:
+- 壹 (1), 贰 (2), 叁 (3), 肆 (4), 伍 (5)
+- 陆 (6), 柒 (7), 捌 (8), 玖 (9), 拾 (10)
+
+Features:
+- Conversion between Arabic numerals and formal Chinese numbers
+- Historical background (Ming Dynasty origin)
+- Real-world usage examples (bank checks, contracts, invoices)
+- Explanation of fraud prevention through complex characters
+- Modern applications in financial and legal contexts
+
 ## Running the Examples
 
 To run these examples, you need to have the Cangjie compiler installed. Visit [Cangjie Official Website](https://cangjie-lang.cn/) for installation instructions.
