@@ -50,6 +50,10 @@ See the [examples README](examples/README.md) for source code and detailed docum
 
 ## Projects
 
+### 倉頡開源
+
+- [倉頡輸入法盲打練習](https://github.com/YongYuH/Cang-Jie-Input-Method-touch-typing-practice) - 倉頡?
+
 ### 仓颉开源
 
 - [仓颉编译器](https://gitcode.com/Cangjie/cangjie_compiler) - 仓颉编译器源码及 cjdb 调试工具。
