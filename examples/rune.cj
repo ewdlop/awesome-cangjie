@@ -3,26 +3,34 @@
 // 倉頡輸入法與Unicode漢字處理
 
 struct ChineseToken {
-    let character: String
+    let character: Rune
     let unicode: String
     let meaning: String
-    let radical: String
+    let radical: Rune
     let strokes: Int64
+    
+    init(character: Rune, unicode: String, meaning: String, radical: Rune, strokes: Int64) {
+        this.character = character
+        this.unicode = unicode
+        this.meaning = meaning
+        this.radical = radical
+        this.strokes = strokes
+    }
 }
 
-func getUnicodeHex(char: String): String {
+func getUnicodeHex(character: Rune): String {
     // Get Unicode code point in hex format
     // This is a simplified representation
-    return "U+${char}"  // Placeholder - actual implementation would use character encoding
+    return "U+${character}"  // Placeholder - actual implementation would use character encoding
 }
 
-func createToken(char: String, meaning: String, radical: String, strokes: Int64): ChineseToken {
+func createToken(character: Rune, meaning: String, radical: Rune, strokes: Int64): ChineseToken {
     return ChineseToken(
-        character: char,
-        unicode: getUnicodeHex(char),
-        meaning: meaning,
-        radical: radical,
-        strokes: strokes
+        character,
+        getUnicodeHex(character),
+        meaning,
+        radical,
+        strokes
     )
 }
 
@@ -39,14 +47,14 @@ main() {
     
     // Create tokens for some Chinese characters
     let tokens: Array<ChineseToken> = [
-        createToken("倉", "warehouse, granary", "人", 10),
-        createToken("頡", "to select, Cangjie", "頁", 12),
-        createToken("天", "heaven, sky", "大", 4),
-        createToken("地", "earth, ground", "土", 6),
-        createToken("人", "person, human", "人", 2),
-        createToken("和", "harmony, peace", "口", 8),
-        createToken("中", "middle, center", "丨", 4),
-        createToken("文", "language, culture", "文", 4)
+        createToken(r'倉', "warehouse, granary", r'人', 10),
+        createToken(r'頡', "to select, Cangjie", r'頁', 12),
+        createToken(r'天', "heaven, sky", r'大', 4),
+        createToken(r'地', "earth, ground", r'土', 6),
+        createToken(r'人', "person, human", r'人', 2),
+        createToken(r'和', "harmony, peace", r'口', 8),
+        createToken(r'中', "middle, center", r'丨', 4),
+        createToken(r'文', "language, culture", r'文', 4)
     ]
     
     println("字符標記表 (Character Token Table):")

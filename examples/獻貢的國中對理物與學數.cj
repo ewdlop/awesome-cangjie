@@ -33,7 +33,9 @@ main() {
     
     print("   Twin Primes: ")
     for (pair in twinPrimes) {
-        print("(${pair.0},${pair.1}) ")
+        let first = pair.0
+        let second = pair.1
+        print("(${first},${second}) ")
     }
     println("\n")
     

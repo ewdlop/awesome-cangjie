@@ -20,81 +20,90 @@ struct TrigramInfo {
     let element: String
     let direction: String
     let attribute: String
+    
+    init(name: String, symbol: String, binary: String, element: String, direction: String, attribute: String) {
+        this.name = name
+        this.symbol = symbol
+        this.binary = binary
+        this.element = element
+        this.direction = direction
+        this.attribute = attribute
+    }
 }
 
 func getTrigramInfo(trigram: Trigram): TrigramInfo {
     match (trigram) {
         case 乾 =>
             return TrigramInfo(
-                name: "乾 (Qian)",
-                symbol: "☰",
-                binary: "111",
-                element: "天 (Heaven)",
-                direction: "西北 (Northwest)",
-                attribute: "創造、剛健 (Creative, Strong)"
+                "乾 (Qian)",
+                "☰",
+                "111",
+                "天 (Heaven)",
+                "西北 (Northwest)",
+                "創造、剛健 (Creative, Strong)"
             )
         case 兌 =>
             return TrigramInfo(
-                name: "兌 (Dui)",
-                symbol: "☱",
-                binary: "110",
-                element: "澤 (Lake)",
-                direction: "西 (West)",
-                attribute: "喜悅 (Joyful)"
+                "兌 (Dui)",
+                "☱",
+                "110",
+                "澤 (Lake)",
+                "西 (West)",
+                "喜悅 (Joyful)"
             )
         case 離 =>
             return TrigramInfo(
-                name: "離 (Li)",
-                symbol: "☲",
-                binary: "101",
-                element: "火 (Fire)",
-                direction: "南 (South)",
-                attribute: "依附、光明 (Clinging, Bright)"
+                "離 (Li)",
+                "☲",
+                "101",
+                "火 (Fire)",
+                "南 (South)",
+                "依附、光明 (Clinging, Bright)"
             )
         case 震 =>
             return TrigramInfo(
-                name: "震 (Zhen)",
-                symbol: "☳",
-                binary: "100",
-                element: "雷 (Thunder)",
-                direction: "東 (East)",
-                attribute: "動、奮起 (Arousing, Moving)"
+                "震 (Zhen)",
+                "☳",
+                "100",
+                "雷 (Thunder)",
+                "東 (East)",
+                "動、奮起 (Arousing, Moving)"
             )
         case 巽 =>
             return TrigramInfo(
-                name: "巽 (Xun)",
-                symbol: "☴",
-                binary: "011",
-                element: "風 (Wind)",
-                direction: "東南 (Southeast)",
-                attribute: "進入、柔順 (Gentle, Penetrating)"
+                "巽 (Xun)",
+                "☴",
+                "011",
+                "風 (Wind)",
+                "東南 (Southeast)",
+                "進入、柔順 (Gentle, Penetrating)"
             )
         case 坎 =>
             return TrigramInfo(
-                name: "坎 (Kan)",
-                symbol: "☵",
-                binary: "010",
-                element: "水 (Water)",
-                direction: "北 (North)",
-                attribute: "險陷 (Abysmal, Dangerous)"
+                "坎 (Kan)",
+                "☵",
+                "010",
+                "水 (Water)",
+                "北 (North)",
+                "險陷 (Abysmal, Dangerous)"
             )
         case 艮 =>
             return TrigramInfo(
-                name: "艮 (Gen)",
-                symbol: "☶",
-                binary: "001",
-                element: "山 (Mountain)",
-                direction: "東北 (Northeast)",
-                attribute: "止、靜止 (Keeping Still)"
+                "艮 (Gen)",
+                "☶",
+                "001",
+                "山 (Mountain)",
+                "東北 (Northeast)",
+                "止、靜止 (Keeping Still)"
             )
         case 坤 =>
             return TrigramInfo(
-                name: "坤 (Kun)",
-                symbol: "☷",
-                binary: "000",
-                element: "地 (Earth)",
-                direction: "西南 (Southwest)",
-                attribute: "順從、接收 (Receptive, Yielding)"
+                "坤 (Kun)",
+                "☷",
+                "000",
+                "地 (Earth)",
+                "西南 (Southwest)",
+                "順從、接收 (Receptive, Yielding)"
             )
     }
 }
